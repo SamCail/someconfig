@@ -20,3 +20,5 @@ sudo journalctl --disk-usage
 }
 
 alias update_software='sudo apt update && sudo apt upgrade -y && sudo apt autoclean -y && sudo apt autopurge -y && sudo apt autoremove -y && sudo snap refresh;uv self update;rustup update; bash -lc "cd ~/Apps/yt-dlp && . ./venv/bin/activate && pip install --upgrade pip yt-dlp "; screenfetch'
+
+clear;sync && echo 3 > /proc/sys/vm/drop_caches && swapoff -a && swapon -a
